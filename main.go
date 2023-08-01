@@ -13,6 +13,13 @@ import (
 
 // go run main.go WIDTH HEIGHT
 func main() {
+	defer func() {
+		e := recover()
+		if e != nil {
+			fmt.Printf("Something horrible happened: %s\n", e)
+		}
+	}()
+
 	width, _ := strconv.Atoi(os.Args[1])
 	height, _ := strconv.Atoi(os.Args[2])
 
