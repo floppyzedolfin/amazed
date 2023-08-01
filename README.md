@@ -3,6 +3,7 @@ A project that bewilders you.
 
 This program was written with the writing of a chapter of our book in mind.
 We needed to generate mazes as PNG images, so we wrote a program to do it for us.
+These walls are thick.
 
 You can run this program this way:
 
@@ -36,6 +37,7 @@ There is a slight "chance" that the image generation will fail. It's random.
 If the randomness decides to create a "comb", where every branch will only extend to the edge,
 and not branch itself, the required complexity wouldn't be hit.
 Just regenerate the image.
+This is quite likely to happen for "small" images, with sides shorter than 32 pixels.
 
 # Limitations
 
